@@ -113,6 +113,15 @@
           "params": {
             "url": "Instagram post URL"
           }
+        },
+        {
+          "name": "TikTok Downloader",
+          "desc": "Download video atau gambar dari TikTok (tanpa watermark)",
+          "path": "/downloader/tiktok?url=",
+          "status": "ready",
+          "params": {
+          "url": "URL video TikTok"
+          }
         }
       ]
     }
