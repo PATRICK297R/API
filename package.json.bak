@@ -20,7 +20,7 @@
     "https": "^1.0.0",
     "node-fetch": "^2.6.1",
     "yt-search": "^2.12.1",
-    "@vreden/youtube_scraper": "latest",
+    "@vreden/youtube-scraper": "latest",
     "eventsource": "latest"
   }
 }

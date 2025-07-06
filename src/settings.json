@@ -7,7 +7,7 @@
     "status": "Online!"
   },
   "apiSettings": {
-    "creator": "Rasya", 
+    "creator": "Rasya",
     "apikey": ["rzx"]
   },
   "categories": [
@@ -23,14 +23,24 @@
             "text": "Text for luminai to respond to"
           }
         },
-       {
+        {
           "name": "HydroMind",
           "desc": "See the list of supported AI models here: https://mind.hydrooo.web.id",
           "path": "/ai/hydromind?text=&model=",
           "status": "ready",
           "params": {
             "text": "Teks atau perintah untuk chat AI",
-            "model":"1See the list of supported AI models here: https://mind.hydrooo.web.id"
+            "model": "1See the list of supported AI models here: https://mind.hydrooo.web.id"
+          }
+        },
+        {
+          "name": "Deepseek-R1",
+          "desc": "Talk with Deepseek AI R1 model",
+          "path": "/ai/deepseek?text=&websearch=",
+          "status": "ready",
+          "params": {
+            "text": "Teks atau perintah untuk chat AI",
+            "websearch": "true / false (aktifkan pencarian web jika perlu)"
           }
         }
       ]
@@ -59,6 +69,38 @@
           }
         }
       ]
-    }               
+    },
+    {
+      "name": "Downloader",
+      "items": [
+        {
+          "name": "YouTube MP3",
+          "desc": "Download audio from YouTube",
+          "path": "/downloader/ytmp3?url=",
+          "status": "ready",
+          "params": {
+            "url": "YouTube video URL"
+          }
+        },
+        {
+          "name": "YouTube MP4",
+          "desc": "Download video from YouTube",
+          "path": "/downloader/ytmp4?url=",
+          "status": "ready",
+          "params": {
+            "url": "YouTube video URL"
+          }
+        },
+        {
+          "name": "Instagram Downloader",
+          "desc": "Download media (video/image) from public Instagram posts",
+          "path": "/downloader/instagram?url=",
+          "status": "ready",
+          "params": {
+            "url": "Instagram post URL"
+          }
+        }
+      ]
+    }
   ]
 }
