@@ -21,6 +21,7 @@
     "node-fetch": "^2.6.1",
     "yt-search": "^2.12.1",
     "@vreden/youtube_scraper": "latest",
-    "eventsource": "latest"
+    "eventsource": "latest",
+    "moment": "latest"
   }
 }

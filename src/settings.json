@@ -46,6 +46,20 @@
       ]
     },
     {
+  "name": "Stalk",
+  "items": [
+    {
+      "name": "Free Fire",
+      "desc": "Stalk data akun Free Fire lengkap (banner, outfit, info, pet, dll)",
+      "path": "/stalk/freefire?uid=",
+      "status": "ready",
+      "params": {
+        "uid": "UID akun Free Fire (angka)"
+          }
+        }
+      ]
+    },
+    {
       "name": "Random",
       "items": [
         {
