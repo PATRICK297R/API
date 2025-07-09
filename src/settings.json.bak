@@ -60,6 +60,20 @@
       ]
     },
     {
+  "name": "Tools",
+  "items": [
+    {
+      "name": "YouTube Transcript",
+      "desc": "Mengambil transkrip otomatis dari video YouTube (jika tersedia)",
+      "path": "/tools/yttranscript?url=",
+      "status": "ready",
+      "params": {
+        "url": "URL atau ID video YouTube"
+      }
+    }
+  ]
+},
+    {
       "name": "Random",
       "items": [
         {

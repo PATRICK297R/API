@@ -84,20 +84,29 @@
         }
       ]
     },
+{
+  "name": "Search Tools",
+  "items": [
     {
-      "name": "Search Tools",
-      "items": [
-        {
-          "name": "YouTube",
-          "desc": "Video search",
-          "path": "/search/youtube?q=",
-          "status": "ready",
-          "params": {
-            "q": "Search query"
-          }
-        }
-      ]
+      "name": "YouTube",
+      "desc": "Video search",
+      "path": "/search/youtube?q=",
+      "status": "ready",
+      "params": {
+        "q": "Search query"
+      }
     },
+    {
+      "name": "Anime Search",
+      "desc": "Cari informasi lengkap dari judul anime via MyAnimeList",
+      "path": "/search/anime?q=",
+      "status": "ready",
+      "params": {
+        "q": "Judul anime yang ingin dicari"
+      }
+    }
+  ]
+},
     {
       "name": "Downloader",
       "items": [
