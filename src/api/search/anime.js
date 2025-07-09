@@ -1,63 +1,31 @@
-// src/api/search/anime.js 
-module.exports = function (app) { 
 const malScraper = require('mal-scraper');
 
-app.get('/search/anime', async (req, res) => { const { q } = req.query;
+module.exports = function (app) {
+  app.get('/search/anime', async (req, res) => {
+    const { q } = req.query;
 
-if (!q) {
-  return res.status(400).json({
-    status: false,
-    error: 'Parameter "q" (anime title) diperlukan'
-  });
-}
+    if (!q) {
+      return res.status(400).json({
+        status: false,
+        error: 'Parameter "q" (judul anime) dibutuhkan.'
+      });
+    }
 
-try {
-  const anime = await malScraper.getInfoFromName(q).catch(() => null);
+    try {
+      const result = await malScraper.getInfoFromName(q);
 
-  if (!anime) {
-    return res.status(404).json({
-      status: false,
-      error: 'Anime tidak ditemukan'
-    });
-  }
+      res.json({
+        status: true,
+        creator: 'Rasya',
+        result
+      });
 
-  const characters = Array.isArray(anime.characters)
-    ? anime.characters.map(char => ({
-        name: char.name,
-        role: char.role,
-        picture: char.picture,
-        link: char.link
-      }))
-    : [];
-
-  res.status(200).json({
-    status: true,
-    creator: 'Rasya',
-    result: {
-      title: anime.title,
-      type: anime.type,
-      premiered: anime.premiered,
-      episodes: anime.episodes,
-      status: anime.status,
-      genres: anime.genres,
-      studios: anime.studios,
-      score: anime.score,
-      rating: anime.rating,
-      ranked: anime.ranked,
-      popularity: anime.popularity,
-      trailer: anime.trailer,
-      url: anime.url,
-      synopsis: anime.synopsis,
-      picture: anime.picture,
-      characters
+    } catch (error) {
+      res.status(500).json({
+        status: false,
+        error: 'Anime tidak ditemukan atau terjadi kesalahan.',
+        message: error.message
+      });
     }
   });
-} catch (err) {
-  res.status(500).json({
-    status: false,
-    error: err.message || 'Terjadi kesalahan saat memproses data'
-  });
-}
-
-}); };
-
+};

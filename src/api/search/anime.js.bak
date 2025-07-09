@@ -1,4 +1,6 @@
-// src/api/search/anime.js module.exports = function (app) { const malScraper = require('mal-scraper');
+// src/api/search/anime.js 
+module.exports = function (app) { 
+const malScraper = require('mal-scraper');
 
 app.get('/search/anime', async (req, res) => { const { q } = req.query;
 
