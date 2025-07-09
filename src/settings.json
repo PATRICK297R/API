@@ -113,7 +113,16 @@
       "params": {
         "q": "Judul anime (keyword)"
       }
-    }
+    },
+    {
+          "name": "TikTok",
+          "desc": "Search TikTok videos by keyword",
+          "path": "/search/tiktok?q=",
+          "status": "ready",
+          "params": {
+            "q": "Search query"
+          }
+        }
   ]
 },
     {
