@@ -1,6 +1,6 @@
 {
   "name": "PatrickBotz Api",
-  "version": "v1.0.0",
+  "version": "v2.0.0",
   "description": "Simple and easy to use API.",
   "bannerImage": "/src/banner.jpg",
   "header": {
@@ -46,33 +46,33 @@
       ]
     },
     {
-  "name": "Stalk",
-  "items": [
-    {
-      "name": "Free Fire",
-      "desc": "Stalk data akun Free Fire lengkap (banner, outfit, info, pet, dll)",
-      "path": "/stalk/freefire?uid=",
-      "status": "ready",
-      "params": {
-        "uid": "UID akun Free Fire (angka)"
+      "name": "Stalk",
+      "items": [
+        {
+          "name": "Free Fire",
+          "desc": "Stalk data akun Free Fire lengkap (banner, outfit, info, pet, dll)",
+          "path": "/stalk/freefire?uid=",
+          "status": "ready",
+          "params": {
+            "uid": "UID akun Free Fire (angka)"
           }
         }
       ]
     },
     {
-  "name": "Tools",
-  "items": [
-    {
-      "name": "YouTube Transcript",
-      "desc": "Mengambil transkrip otomatis dari video YouTube (jika tersedia)",
-      "path": "/tools/yttranscript?url=",
-      "status": "ready",
-      "params": {
-        "url": "URL atau ID video YouTube"
-      }
-    }
-  ]
-},
+      "name": "Tools",
+      "items": [
+        {
+          "name": "YouTube Transcript",
+          "desc": "Mengambil transkrip otomatis dari video YouTube (jika tersedia)",
+          "path": "/tools/yttranscript?url=",
+          "status": "ready",
+          "params": {
+            "url": "URL atau ID video YouTube"
+          }
+        }
+      ]
+    },
     {
       "name": "Random",
       "items": [
@@ -84,29 +84,29 @@
         }
       ]
     },
-{
-  "name": "Search Tools",
-  "items": [
     {
-      "name": "YouTube",
-      "desc": "Video search",
-      "path": "/search/youtube?q=",
-      "status": "ready",
-      "params": {
-        "q": "Search query"
-      }
+      "name": "Search Tools",
+      "items": [
+        {
+          "name": "YouTube",
+          "desc": "Video search",
+          "path": "/search/youtube?q=",
+          "status": "ready",
+          "params": {
+            "q": "Search query"
+          }
+        },
+        {
+          "name": "Anime Search",
+          "desc": "Cari informasi lengkap dari judul anime via MyAnimeList",
+          "path": "/search/anime?q=",
+          "status": "ready",
+          "params": {
+            "q": "Judul anime yang ingin dicari"
+          }
+        }
+      ]
     },
-    {
-      "name": "Anime Search",
-      "desc": "Cari informasi lengkap dari judul anime via MyAnimeList",
-      "path": "/search/anime?q=",
-      "status": "ready",
-      "params": {
-        "q": "Judul anime yang ingin dicari"
-      }
-    }
-  ]
-},
     {
       "name": "Downloader",
       "items": [
@@ -143,7 +143,7 @@
           "path": "/downloader/tiktok?url=",
           "status": "ready",
           "params": {
-          "url": "URL video TikTok"
+            "url": "URL video TikTok"
           }
         }
       ]
