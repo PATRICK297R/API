@@ -84,29 +84,47 @@
         }
       ]
     },
+{
+  "name": "Search Tools",
+  "items": [
     {
-      "name": "Search Tools",
-      "items": [
-        {
-          "name": "YouTube",
-          "desc": "Video search",
-          "path": "/search/youtube?q=",
-          "status": "ready",
-          "params": {
-            "q": "Search query"
-          }
-        },
-        {
-          "name": "Anime Search",
-          "desc": "Cari informasi lengkap dari judul anime via MyAnimeList",
-          "path": "/search/anime?q=",
-          "status": "ready",
-          "params": {
-            "q": "Judul anime yang ingin dicari"
-          }
-        }
-      ]
+      "name": "YouTube",
+      "desc": "Video search",
+      "path": "/search/youtube?q=",
+      "status": "ready",
+      "params": {
+        "q": "Search query"
+      }
     },
+    {
+      "name": "Anime (MyAnimeList)",
+      "desc": "Cari info lengkap anime dari MyAnimeList",
+      "path": "/search/anime?q=",
+      "status": "ready",
+      "params": {
+        "q": "Judul anime"
+      }
+    },
+    {
+      "name": "Otakudesu Search",
+      "desc": "Cari anime dari situs Otakudesu",
+      "path": "/anime/otakudesu/search?q=",
+      "status": "ready",
+      "params": {
+        "q": "Judul anime (keyword)"
+      }
+    },
+    {
+      "name": "Otakudesu Detail",
+      "desc": "Ambil detail lengkap dari anime di Otakudesu",
+      "path": "/anime/otakudesu/detail?url=",
+      "status": "ready",
+      "params": {
+        "url": "URL dari hasil pencarian Otakudesu"
+      }
+    }
+  ]
+},
     {
       "name": "Downloader",
       "items": [

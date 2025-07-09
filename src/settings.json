@@ -113,15 +113,6 @@
       "params": {
         "q": "Judul anime (keyword)"
       }
-    },
-    {
-      "name": "Otakudesu Detail",
-      "desc": "Ambil detail lengkap dari anime di Otakudesu",
-      "path": "/anime/otakudesu/detail?url=",
-      "status": "ready",
-      "params": {
-        "url": "URL dari hasil pencarian Otakudesu"
-      }
     }
   ]
 },
