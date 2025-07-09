@@ -1,0 +1,30 @@
+module.exports = function (app) {
+  const { getYoutubeTranscript } = require('../../lib/yttranskrip.js');
+
+  app.get('/tools/yttranscript', async (req, res) => {
+    const { url } = req.query;
+
+    if (!url) {
+      return res.status(400).json({
+        status: false,
+        error: 'Parameter "url" YouTube dibutuhkan'
+      });
+    }
+
+    try {
+      const transcript = await getYoutubeTranscript(url);
+
+      return res.status(200).json({
+        status: true,
+        creator: 'Rasya',
+        video: url,
+        result: transcript
+      });
+    } catch (err) {
+      return res.status(500).json({
+        status: false,
+        error: err.message || 'Gagal mengambil transkrip'
+      });
+    }
+  });
+};
