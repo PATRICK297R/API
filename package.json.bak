@@ -22,7 +22,6 @@
     "yt-search": "^2.12.1",
     "@vreden/youtube_scraper": "latest",
     "eventsource": "latest",
-    "moment": "latest",
-    "mal-scraper": "^2.11.4"
+    "moment": "latest"
   }
 }
